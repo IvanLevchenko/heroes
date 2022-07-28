@@ -1,0 +1,43 @@
+.App {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .header {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 100px;
+    align-items: center;
+    padding: 0 50px;
+
+    .header__title {
+      cursor: pointer;
+    }
+
+    .header__create-btn {
+      margin: 10px;
+      width: 150px;
+      height: 50px;
+      background: none;
+      border: none;
+      outline: none;
+      border-radius: 25px;
+      font-size: large;
+      cursor: pointer;
+      transition: 0.5s;
+
+      &:hover {
+        background: rgb(236, 236, 236);
+        transition: 0.5s;
+      }
+
+      &:active {
+        background: rgb(219, 219, 219);
+      }
+    }
+  }
+  .list {
+    width: 1000px;
+  }
+}

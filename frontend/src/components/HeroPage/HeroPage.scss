@@ -1,0 +1,85 @@
+@import "~react-image-gallery/styles/scss/image-gallery.scss";
+
+.hero-page {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  
+  .hero-page__wrapper {
+    width: 1000px;
+    padding: 50px 0;
+    position: relative;
+
+    .hero-page__btns {
+      position: absolute;
+      top: 50px;
+      right: -100px;
+      display: flex;
+      flex-direction: column;
+
+      .hero-page__btn {
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        border: none;
+        outline: none;
+        background: none;
+        cursor: pointer;
+        transition: 0.4s;
+        overflow: hidden;
+        margin: 10px 0;
+
+        img {
+          height: 30px;
+        }
+        
+      }
+
+      .delete-btn {
+        &:hover {
+          transition: 0.4s;
+          background: #F8D3D3;
+        }
+      }
+
+      .edit-btn {
+        &:hover {
+          transition: 0.4s;
+          background: #D3F3F8;
+        }
+      }
+    }
+
+    .hero-page__img {
+      width: 100%;
+  
+      img {
+        width: 100%;
+      }
+    }
+  
+    .hero-page__info {
+      width: 100%;
+
+      .hero-page__info-alter {
+        margin-bottom: 50px;
+      }
+
+      .hero-page__info-alter {
+        font-size: 4em;
+      }
+
+      .hero-page__info-section {
+        .hero-page__info-section-p {
+          font-size: larger;
+        }
+        .hero-page__info-title {
+          margin: 20px 0;
+        }
+      }
+    }
+  }
+
+}

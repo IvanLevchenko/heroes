@@ -1,0 +1,7 @@
+/frontend/public
+/frontend/node_modules
+/frontend/package-lock.json
+/api/node_modules
+/api/.env
+/api/package-lock.json
+/api/uploads/

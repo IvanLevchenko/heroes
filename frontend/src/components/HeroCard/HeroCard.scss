@@ -1,0 +1,54 @@
+.hero-card {
+  background: white;
+  height: 200px;
+  width: 100%;
+  margin-bottom: 30px;
+  display: flex;
+  cursor: pointer;
+  box-shadow: 5px 5px 15px 5px rgb(216, 216, 216);
+  position: relative;
+  transition: 0.3s;
+
+  .hero-card__image {
+    overflow: hidden;
+    position: relative;
+    width: 50%;
+
+    img {
+      width: 100%;
+      transition: 0.5s ease;
+    }
+
+    
+  }
+
+  .hero-card__info {
+    padding: 15px;
+    width: 50%;
+    position: relative;
+
+    .hero-card__highlight {
+      font-weight: bolder;
+    }
+  }
+
+  &:hover {
+    filter: brightness(0.9);
+    transition: 0.3s;
+    .hero-card__image {
+    }
+
+    &::after {
+      filter: contrast(0.1);
+      content: '';
+      width: 16px;
+      height: 16px;
+      background-image: url(../../assets/external-link.png);
+      background-size: contain;
+      position: absolute;
+      right: -30px;
+      top: 0;
+    }
+  }
+
+}
