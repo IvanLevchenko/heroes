@@ -57,7 +57,7 @@ export default function Form({fillData}) {
         setPreloadedData(response.data[0])
         response.data[0].images.forEach(img => {
           console.log(img)
-          setFiles(prev => [...prev, {source: 'http://localhost:3000/uploads/' + img.split('\\')[1], options: {type: 'local'}}])
+          setFiles(prev => [...prev, {source: 'https://my-heroes-list.herokuapp.com/uploads/' + img.split('\\')[1], options: {type: 'local'}}])
         })
       })
     }
